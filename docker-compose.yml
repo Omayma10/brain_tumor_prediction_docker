@@ -1,0 +1,22 @@
+version: '3.10'
+services:
+  flask-server:
+    build: .\cont1
+    ports:
+      - "8080:8080"
+    networks:
+      - mon-reseau
+
+  interface:
+    build: .\cont2
+    stdin_open: true
+    tty: true
+    command: sh -c "sleep 10 && python ihm.py"
+    depends_on:
+      - flask-server
+    networks:
+      - mon-reseau
+
+networks:
+  mon-reseau:
+    name: mon-reseau
