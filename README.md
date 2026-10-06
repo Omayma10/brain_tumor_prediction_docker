@@ -1,4 +1,4 @@
-# 🧠 Brain Tumor Prediction – Docker
+# Brain Tumor Prediction – Docker
 
 Application conteneurisée de prédiction de tumeur cérébrale à partir de caractéristiques extraites d'images IRM. Un modèle **Random Forest** est exposé via une **API Flask**, et une interface en ligne de commande permet de saisir les valeurs et d'obtenir la prédiction (`tumor` / `no tumor`).
 
@@ -60,7 +60,7 @@ Prétraitement appliqué (identique à l'entraînement) :
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/<votre-utilisateur>/brain_tumor_prediction_docker.git
+   git clone https://github.com/Omayma10/brain_tumor_prediction_docker.git
    cd brain_tumor_prediction_docker
    ```
 
